@@ -29,6 +29,7 @@ enum WeatherResult {
 class WebServiceClient{
     static let sharedInstance = WebServiceClient()
     let session = URLSession.shared
+    //API and base URL Path for Weather API
     
     fileprivate let APIKey = "c4bbaea3c1c44601a9785657172903"
     fileprivate let baseURLPath = "https://api.worldweatheronline.com/premium/v1/weather.ashx?"
