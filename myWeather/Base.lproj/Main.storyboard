@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aR8-HS-tDC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aR8-HS-tDC">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,7 +30,7 @@
                                 </connections>
                             </searchBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t8H-Oq-gDB">
-                                <rect key="frame" x="0.0" y="332.5" width="375" height="2"/>
+                                <rect key="frame" x="20" y="332.5" width="335" height="2"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="9cL-NA-ftY"/>
@@ -44,7 +44,7 @@
                                         <rect key="frame" x="0.0" y="28" width="272" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oLS-iq-FEe" id="Ayr-iy-esy">
-                                            <rect key="frame" x="0.0" y="0.0" width="272" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="272" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMT-Tg-hoI">
@@ -70,8 +70,8 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="3dO-9k-Vp2" secondAttribute="trailing" constant="20" id="HOX-1I-BEb"/>
-                            <constraint firstItem="t8H-Oq-gDB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Jmk-vM-YvJ"/>
-                            <constraint firstAttribute="trailing" secondItem="t8H-Oq-gDB" secondAttribute="trailing" id="Q9h-1H-rzR"/>
+                            <constraint firstItem="t8H-Oq-gDB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Jmk-vM-YvJ"/>
+                            <constraint firstAttribute="trailing" secondItem="t8H-Oq-gDB" secondAttribute="trailing" constant="20" id="Q9h-1H-rzR"/>
                             <constraint firstItem="Y3v-4a-ExA" firstAttribute="top" secondItem="t8H-Oq-gDB" secondAttribute="bottom" constant="19.5" id="R8e-OW-5Kz"/>
                             <constraint firstAttribute="trailing" secondItem="Y3v-4a-ExA" secondAttribute="trailing" constant="42" id="WlI-U3-xrf"/>
                             <constraint firstItem="3dO-9k-Vp2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="gII-Yi-QFM"/>

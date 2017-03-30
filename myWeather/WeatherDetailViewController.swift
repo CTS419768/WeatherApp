@@ -13,6 +13,7 @@ class WeatherDetailViewController: UIPageViewController, UIPageViewControllerDel
     
     var city : String?
     var weatherConditionsArray : [Weather?] = []
+    var pageController: UIPageViewController?
     
     let pages = ["PagesContentController1", "PagesContentController2"]
     
@@ -21,7 +22,12 @@ class WeatherDetailViewController: UIPageViewController, UIPageViewControllerDel
         super.viewDidLoad()
         self.delegate = self
         self.dataSource = self
-    
+        
+        let pageControl = UIPageControl.appearance()
+        pageControl.pageIndicatorTintColor = UIColor.lightGray
+        pageControl.currentPageIndicatorTintColor = UIColor.black
+        pageControl.backgroundColor = UIColor.black
+        
         DispatchQueue.global(qos: .background).async {
             
             guard self.city != nil else{
