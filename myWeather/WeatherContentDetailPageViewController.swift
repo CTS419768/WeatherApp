@@ -36,11 +36,14 @@ class WeatherContentDetailPageViewController: UIViewController {
         guard let current = currentCondition else {
             return
         }
+        let str = current.temperature
+        let temperatureStr = str! + "\u{00B0}" + "C"
+        
         visibilityValue.text = current.visibility
         humadityValue.text = current.humidity
         windSpeedValue.text = current.windSpeedMiles
         weatherCondition.text = current.weatherDesc
-        temperature.text = current.temperature
+        temperature.text = temperatureStr
         date.text = current.observationTime
         weatherImage.imageFromServerURL(urlString: current.weatherIconUrl!)
         cityName.text = currentCity

@@ -33,10 +33,18 @@ class weeklyWeatherDetailPageViewController: UIViewController, UITableViewDelega
     // create a cell for each table view row
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+       
+        
         let cell:CustomCell = weatherTableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! CustomCell
         let weatherObject = weatherConditionsArray[indexPath.row]
-        cell.minTempC.text = weatherObject?.minTempC
-        cell.maxtempC.text = weatherObject?.maxTempC
+        let strMinC = weatherObject?.minTempC
+        let temperatureStrMin = strMinC! + "\u{00B0}" + "C"
+        
+        let strMaxC = weatherObject?.maxTempC
+        let temperatureStrMax = strMaxC! + "\u{00B0}" + "C"
+        
+        cell.minTempC.text = temperatureStrMin
+        cell.maxtempC.text = temperatureStrMax
         cell.day.text = Utility.getDayOfWeek((weatherObject?.date)!)
         return cell
     }

@@ -49,6 +49,14 @@ class WeatherDetailViewController: UIPageViewController, UIPageViewControllerDel
                 
                 //TODO: Show Alert with for error
                 print(err)
+                // create the alert
+                let alert = UIAlertController(title: "Alert", message: "No City Found, Enter Valid city Name", preferredStyle: UIAlertControllerStyle.alert)
+                
+                // add an action (button)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                
+                // show the alert
+                self.present(alert, animated: true, completion: nil)
             
             }
          })
