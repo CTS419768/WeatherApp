@@ -29,10 +29,7 @@ class WeatherContentDetailPageViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-//        imageView.image = UIImage(named: strPhotoName)
-//        lblTitle.text = strTitle
-        
-     
+
     }
  
     func updateUI(){
@@ -47,8 +44,6 @@ class WeatherContentDetailPageViewController: UIViewController {
         date.text = current.observationTime
         weatherImage.imageFromServerURL(urlString: current.weatherIconUrl!)
         cityName.text = currentCity
-        
-        
         
     }
     

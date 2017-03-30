@@ -26,7 +26,16 @@ class ViewController: UIViewController,UISearchBarDelegate,UITableViewDataSource
         }
         cityNameArray = UserDefaults.standard.object(forKey: "CityNames") as! [String]
     }
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        citySearch.text = ""
+        guard (UserDefaults.standard.object(forKey: "CityNames") as? Array<Any>) != nil
+            else {
+                return
+        }
+        cityNameArray = UserDefaults.standard.object(forKey: "CityNames") as! [String]
+        cityTableView.reloadData()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -70,7 +79,6 @@ class ViewController: UIViewController,UISearchBarDelegate,UITableViewDataSource
     }
 
 }
-
 extension ViewController{
     func savetoUserDefault(city : String)  {
         let defaults = UserDefaults.standard

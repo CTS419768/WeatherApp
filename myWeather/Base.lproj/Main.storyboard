@@ -274,9 +274,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yi9-5p-iF2">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherImage" translatesAutoresizingMaskIntoConstraints="NO" id="Yi9-5p-iF2">
                                                     <rect key="frame" x="10" y="25" width="50" height="50"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="TX2-6w-4PX"/>
                                                         <constraint firstAttribute="width" constant="50" id="g2V-pz-hMp"/>
@@ -309,15 +309,32 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XyK-QH-kfz">
+                                                    <rect key="frame" x="222" y="3" width="32.5" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmi-pQ-6OW">
+                                                    <rect key="frame" x="328" y="11" width="37" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="tmi-pQ-6OW" secondAttribute="trailing" constant="10" id="6CE-gQ-zc0"/>
+                                                <constraint firstItem="LLp-Bs-d4a" firstAttribute="top" secondItem="XyK-QH-kfz" secondAttribute="bottom" constant="8" id="9XJ-Hl-PfB"/>
+                                                <constraint firstItem="XyK-QH-kfz" firstAttribute="top" secondItem="38r-Et-you" secondAttribute="top" constant="3" id="BfS-8q-CvU"/>
                                                 <constraint firstItem="CpJ-PX-eMa" firstAttribute="centerY" secondItem="38r-Et-you" secondAttribute="centerY" constant="1.5" id="CGi-Cp-lIM"/>
                                                 <constraint firstItem="fzL-1z-qYd" firstAttribute="centerY" secondItem="38r-Et-you" secondAttribute="centerY" id="GbI-SN-kIg"/>
                                                 <constraint firstItem="CpJ-PX-eMa" firstAttribute="top" secondItem="38r-Et-you" secondAttribute="topMargin" constant="38" id="MhK-CB-DpH"/>
                                                 <constraint firstItem="eBJ-bZ-Q6V" firstAttribute="leading" secondItem="Yi9-5p-iF2" secondAttribute="trailing" constant="25" id="XqK-im-Y1v"/>
                                                 <constraint firstItem="eBJ-bZ-Q6V" firstAttribute="centerY" secondItem="38r-Et-you" secondAttribute="centerY" id="Z3e-Cg-dit"/>
                                                 <constraint firstItem="LLp-Bs-d4a" firstAttribute="centerY" secondItem="38r-Et-you" secondAttribute="centerY" id="dM1-Kk-4V7"/>
+                                                <constraint firstItem="tmi-pQ-6OW" firstAttribute="top" secondItem="38r-Et-you" secondAttribute="topMargin" constant="3" id="fa8-y0-BMR"/>
                                                 <constraint firstItem="fzL-1z-qYd" firstAttribute="leading" secondItem="CpJ-PX-eMa" secondAttribute="trailing" constant="15" id="fpE-Xa-iOZ"/>
+                                                <constraint firstItem="LLp-Bs-d4a" firstAttribute="centerX" secondItem="XyK-QH-kfz" secondAttribute="centerX" id="gzE-Ns-SAu"/>
                                                 <constraint firstItem="CpJ-PX-eMa" firstAttribute="leading" secondItem="LLp-Bs-d4a" secondAttribute="trailing" constant="25" id="lus-FZ-MK6"/>
                                                 <constraint firstItem="Yi9-5p-iF2" firstAttribute="leading" secondItem="38r-Et-you" secondAttribute="leading" constant="10" id="tBt-yi-ZvR"/>
                                                 <constraint firstItem="Yi9-5p-iF2" firstAttribute="centerY" secondItem="38r-Et-you" secondAttribute="centerY" id="tpw-tC-joa"/>
@@ -354,7 +371,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mah-aj-wLL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2546" y="553"/>
+            <point key="canvasLocation" x="2544.8000000000002" y="552.77361319340332"/>
         </scene>
         <!--Weather Detail View Controller-->
         <scene sceneID="SZb-6u-8Le">
@@ -383,4 +400,7 @@
             <point key="canvasLocation" x="201" y="37"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="WeatherImage" width="256" height="256"/>
+    </resources>
 </document>
